@@ -1,0 +1,226 @@
+[gd_scene format=3 uid="uid://bnis2ynf0m1gr"]
+
+[ext_resource type="Script" uid="uid://c7ga5om4grpak" path="res://scripts/layout/player_selection_button.gd" id="1_77dok"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n6nlm"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="TeamManagement" type="Control" unique_id=2041937307]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=896948728]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=6482166]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.05
+anchor_right = 0.95
+anchor_bottom = 0.95
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_n6nlm")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1442426053]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=1740528244]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="Player1Button" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer2" unique_id=288783610]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
+text = "Player 1
+Avatar: None"
+script = ExtResource("1_77dok")
+
+[node name="Player2Button" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer2" unique_id=522807378]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
+text = "Player 2
+Avatar: None"
+
+[node name="Player3Button" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer2" unique_id=1053223930]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
+text = "Player 3
+Avatar: None"
+
+[node name="Player4Button" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer2" unique_id=1546660586]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
+text = "Player 4
+Avatar: None"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=564861963]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.7
+theme_override_constants/separation = 10
+
+[node name="AvatarInfo" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer" unique_id=1063918491]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.4
+
+[node name="AvatarImage" type="TextureRect" parent="PanelContainer/VBoxContainer/HBoxContainer/AvatarInfo" unique_id=699292018]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.6
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AvatarInfo" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/AvatarInfo" unique_id=141634989]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.4
+
+[node name="AvatarName" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/AvatarInfo/AvatarInfo" unique_id=686701177]
+layout_mode = 2
+
+[node name="AvatarStat" type="HBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/AvatarInfo/AvatarInfo" unique_id=123534844]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
+
+[node name="LeftStat" type="RichTextLabel" parent="PanelContainer/VBoxContainer/HBoxContainer/AvatarInfo/AvatarInfo/AvatarStat" unique_id=375144224]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+bbcode_enabled = true
+
+[node name="RightStat" type="RichTextLabel" parent="PanelContainer/VBoxContainer/HBoxContainer/AvatarInfo/AvatarInfo/AvatarStat" unique_id=1943693084]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer" unique_id=190942544]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.6
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=1847252204]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer" unique_id=1358269511]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer/VBoxContainer" unique_id=2060929449]
+layout_mode = 2
+text = "Skill"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer/VBoxContainer" unique_id=656903091]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="VScrollBar" type="VScrollBar" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer/VBoxContainer/VBoxContainer" unique_id=1870008444]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer/VBoxContainer" unique_id=550647288]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="VScrollBar" type="VScrollBar" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer/VBoxContainer/VBoxContainer2" unique_id=295637877]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer" unique_id=464664740]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer/VBoxContainer2" unique_id=1448809926]
+layout_mode = 2
+text = "Passive"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer/VBoxContainer2" unique_id=520583030]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="VScrollBar" type="VScrollBar" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer/VBoxContainer2/VBoxContainer" unique_id=2147339617]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer/VBoxContainer2" unique_id=534101344]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="VScrollBar" type="VScrollBar" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer/VBoxContainer2/VBoxContainer2" unique_id=670807306]
+layout_mode = 2
+
+[node name="GridContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=325491785]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="Button" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/GridContainer" unique_id=873114874]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.3
+text = "Item 1"
+
+[node name="Button2" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/GridContainer" unique_id=958284447]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.3
+text = "Item 2
+"
+
+[node name="Button3" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/GridContainer" unique_id=870533125]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.3
+
+[node name="MarginContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=1254551598]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+alignment = 2
+
+[node name="Button3" type="Button" parent="PanelContainer/VBoxContainer/MarginContainer" unique_id=1604557269]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+text = "Position
+"
+
+[node name="Button2" type="Button" parent="PanelContainer/VBoxContainer/MarginContainer" unique_id=1929348595]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+text = "Item and Stat"
+
+[node name="Button" type="Button" parent="PanelContainer/VBoxContainer/MarginContainer" unique_id=1586632440]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_stretch_ratio = 0.3
+text = "Battle"

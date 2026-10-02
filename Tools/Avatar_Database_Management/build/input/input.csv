@@ -1,0 +1,10 @@
+Name,HP,ATK,DEF,MAG,RES,SPD,MP,MRG,CRIT,Normal Attack,Traits,Tag,Skills,Passives,Type,Sum
+eldlich,20,2,2,11,3,4,5,3,0,melee_attack,eldlich,eldlich / dark_magic,eldlich / dark_magic,eldlich,battlemage,50
+regenesis_warrior,20,9,3,1,2,4,5,3,0,range_attack_2,,sword / regenesis_warrior,sword / regenesis_warrior,,warrior,50
+chaos_angel,20,2,2,10,3,4,5,3,0,magic_attack,,black_magic / white_magic / chaos_angel,black_magic / white_magic / chaos_angel,chaos_angel,magician,50
+labrynth,20,11,3,1,3,4,5,3,0,melee_attack,,axe / labrynth,axe / labrynth,,warrior,50
+blazing_cartesia,20,10,3,1,4,4,5,3,0,melee_attack,,long_sword,long_sword,,knight,50
+icejade_gymir_aegirince,20,2,2,10,3,4,5,3,0,magic_attack,,white_magic / ice_magic / water_magic,white_magic / ice_magic / water_magic,,magician,50
+flower_cardian_lightflare,20,11,3,1,3,4,5,3,0,melee_attack,,sword / katana,sword / katana,,warrior,50
+libromancer_fireburst,20,10,3,1,4,4,5,3,0,melee_attack,,fire gloves ,fire gloves ,,Sum,50
+angelechy_shatranga,20,2,2,10,4,4,5,3,0,melee_attack,,light_magic / angelechy_shatranga,light_magic / angelechy_shatranga,,magician,50

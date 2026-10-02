@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://dr4np7vf505sb"]
+
+[ext_resource type="Script" uid="uid://dclb4xd0ub0xr" path="res://scripts/layout/start_game_button.gd" id="1_iccp1"]
+
+[node name="StartMenu" type="Control" unique_id=1010596121]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1467174395]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="VSplitContainer" type="VSplitContainer" parent="." unique_id=392277152]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -890.0
+offset_top = -480.0
+offset_right = 890.0
+offset_bottom = 480.0
+grow_horizontal = 2
+grow_vertical = 2
+dragging_enabled = false
+dragger_visibility = 1
+
+[node name="Label" type="Label" parent="VSplitContainer" unique_id=2101598686]
+layout_mode = 2
+theme_override_font_sizes/font_size = 200
+text = "The Last Fantasy"
+horizontal_alignment = 1
+
+[node name="Control" type="Control" parent="VSplitContainer" unique_id=364875190]
+layout_mode = 2
+
+[node name="StartGameButton" type="Button" parent="VSplitContainer/Control" unique_id=1303455940]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -175.0
+offset_top = -38.5
+offset_right = 175.0
+offset_bottom = 38.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "New Game"
+script = ExtResource("1_iccp1")

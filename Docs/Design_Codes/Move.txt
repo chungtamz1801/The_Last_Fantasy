@@ -1,0 +1,15 @@
+class Move:ICommand
+{
+    private Entity mainEntity;
+
+    Move(Entity mainEntity)
+    {
+        this.mainEntity = mainEntity;
+    }
+
+    void Excute()
+    {
+        EnterMovingState();
+    }
+
+}

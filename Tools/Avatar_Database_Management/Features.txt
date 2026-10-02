@@ -1,0 +1,11 @@
+- Avatar Management
+    + Get all avatars
+    + Add new avatar
+    + Edit a avatar
+    + Edit multi avatars
+    + Delete a avatar
+    + Import a .csv file:
+        + If don't exist avatar_ID: create it.
+        + If existed avatar_ID but stats is different: show it to let user chose whether update or not.
+        + If existed avatar_ID and the same stats: skip.
+    + Export a .csv file.

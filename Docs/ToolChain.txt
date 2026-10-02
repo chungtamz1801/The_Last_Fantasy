@@ -1,0 +1,14 @@
+cmake - Build Tool
+g++ (MinGW) - Compiler
+clangd - LSP
+pacman - Package Manager with C/C++ environments
+git - Version Control Tool
+godot - Game Engine
+krita - Art Application
+
+
+//Optional
+konsole - Console Application
+neovim + Lazyvim - Text Editor
+SDL - Graphic Library
+tiled - Used to make Tilemaps

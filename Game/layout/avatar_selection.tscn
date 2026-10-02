@@ -1,0 +1,180 @@
+[gd_scene format=3 uid="uid://jndgk7a8v1sa"]
+
+[ext_resource type="Script" uid="uid://cvh8nhn1gou6o" path="res://scripts/layout/avatar_selection.gd" id="1_6jpec"]
+[ext_resource type="Script" uid="uid://cig3q0vm4140i" path="res://scripts/layout/avatar_list.gd" id="1_e1wbe"]
+[ext_resource type="Script" uid="uid://c7ga5om4grpak" path="res://scripts/layout/player_selection_button.gd" id="2_38fc7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_13qtx"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="AvatarSelection" type="Control" unique_id=743186406]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6jpec")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1842780514]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=64939155]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.05
+anchor_right = 0.95
+anchor_bottom = 0.95
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_13qtx")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1609758846]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="PlayerButtons" type="HBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=163541190]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="Player1Button" type="Button" parent="PanelContainer/VBoxContainer/PlayerButtons" unique_id=1383257449]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
+text = "Player 1
+Avatar: None"
+script = ExtResource("2_38fc7")
+
+[node name="Player2Button" type="Button" parent="PanelContainer/VBoxContainer/PlayerButtons" unique_id=473508229]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
+text = "Player 2
+Avatar: None"
+script = ExtResource("2_38fc7")
+
+[node name="Player3Button" type="Button" parent="PanelContainer/VBoxContainer/PlayerButtons" unique_id=134857166]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
+text = "Player 3
+Avatar: None"
+script = ExtResource("2_38fc7")
+
+[node name="Player4Button" type="Button" parent="PanelContainer/VBoxContainer/PlayerButtons" unique_id=452331572]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
+text = "Player 4
+Avatar: None"
+script = ExtResource("2_38fc7")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=1191718206]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.7
+theme_override_constants/separation = 10
+
+[node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer/VBoxContainer/HBoxContainer" unique_id=624764366]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.35
+horizontal_scroll_mode = 0
+script = ExtResource("1_e1wbe")
+
+[node name="AvatarList" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/ScrollContainer" unique_id=428170653]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="AvatarInfo" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer" unique_id=1734480989]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.4
+
+[node name="AvatarImage" type="TextureRect" parent="PanelContainer/VBoxContainer/HBoxContainer/AvatarInfo" unique_id=2032049693]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.6
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AvatarInfo" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/AvatarInfo" unique_id=1016246962]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.4
+
+[node name="AvatarName" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/AvatarInfo/AvatarInfo" unique_id=428889361]
+layout_mode = 2
+
+[node name="AvatarStat" type="HBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/AvatarInfo/AvatarInfo" unique_id=1475379738]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
+
+[node name="LeftStat" type="RichTextLabel" parent="PanelContainer/VBoxContainer/HBoxContainer/AvatarInfo/AvatarInfo/AvatarStat" unique_id=988035313]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+bbcode_enabled = true
+
+[node name="RightStat" type="RichTextLabel" parent="PanelContainer/VBoxContainer/HBoxContainer/AvatarInfo/AvatarInfo/AvatarStat" unique_id=588169454]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="TagExpandationList" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer" unique_id=1631907697]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.25
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/TagExpandationList" unique_id=2146372580]
+layout_mode = 2
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.1
+text = "Skills"
+
+[node name="Skill" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/TagExpandationList" unique_id=647248205]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.4
+
+[node name="ColorRect" type="ColorRect" parent="PanelContainer/VBoxContainer/HBoxContainer/TagExpandationList/Skill" unique_id=989742620]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label2" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/TagExpandationList" unique_id=400972896]
+layout_mode = 2
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.1
+text = "Passives"
+
+[node name="Passive" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer/TagExpandationList" unique_id=1945736648]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.4
+
+[node name="ColorRect" type="ColorRect" parent="PanelContainer/VBoxContainer/HBoxContainer/TagExpandationList/Passive" unique_id=995223715]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/VBoxContainer" unique_id=99302227]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+
+[node name="Button" type="Button" parent="PanelContainer/VBoxContainer/MarginContainer" unique_id=723214536]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+text = "Start"

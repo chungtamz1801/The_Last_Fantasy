@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/matt/Projects/The_Last_Fantasy/Tools/Avatar_Database_Management/build",
+  "command": "/usr/bin/c++   -std=c++20 -Wall -Wextra -Wpedantic -o CMakeFiles/Avatar_Database_Management.dir/main.cpp.o -c /home/matt/Projects/The_Last_Fantasy/Tools/Avatar_Database_Management/main.cpp",
+  "file": "/home/matt/Projects/The_Last_Fantasy/Tools/Avatar_Database_Management/main.cpp",
+  "output": "CMakeFiles/Avatar_Database_Management.dir/main.cpp.o"
+}
+]

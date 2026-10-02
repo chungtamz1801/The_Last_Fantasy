@@ -1,0 +1,133 @@
+[gd_scene format=3 uid="uid://cvyqxs76gwpat"]
+
+[ext_resource type="Script" uid="uid://bd86qcxglj6x8" path="res://scripts/layout/battle.gd" id="1_x3mi5"]
+[ext_resource type="Script" uid="uid://da384l8wejhq4" path="res://scripts/layout/normal_command_button.gd" id="2_76mee"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_x3mi5"]
+
+[node name="Battle" type="Node2D" unique_id=15545188]
+script = ExtResource("1_x3mi5")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2120697544]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="BattleField" type="Node2D" parent="." unique_id=1088767217]
+
+[node name="Players" type="Node2D" parent="." unique_id=555297040]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=254548186]
+
+[node name="BattleUI" type="Control" parent="CanvasLayer" unique_id=1976763384]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TurnIndicator" type="Panel" parent="CanvasLayer/BattleUI" unique_id=1758326523]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -640.0
+offset_bottom = 108.0
+grow_horizontal = 0
+
+[node name="CommandPanel" type="PanelContainer" parent="CanvasLayer/BattleUI" unique_id=976571894]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -171.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/BattleUI/CommandPanel" unique_id=712174327]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="PlayerInfo" type="Panel" parent="CanvasLayer/BattleUI/CommandPanel/HBoxContainer" unique_id=1721419544]
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/BattleUI/CommandPanel/HBoxContainer/PlayerInfo" unique_id=735775406]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/BattleUI/CommandPanel/HBoxContainer/PlayerInfo/VBoxContainer" unique_id=1349474074]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="CanvasLayer/BattleUI/CommandPanel/HBoxContainer/PlayerInfo/VBoxContainer/HBoxContainer" unique_id=1157723195]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.7
+text = "Makoto"
+
+[node name="AP" type="Label" parent="CanvasLayer/BattleUI/CommandPanel/HBoxContainer/PlayerInfo/VBoxContainer/HBoxContainer" unique_id=222405954]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.3
+text = "AP: 3/3"
+label_settings = SubResource("LabelSettings_x3mi5")
+horizontal_alignment = 1
+
+[node name="Health" type="Label" parent="CanvasLayer/BattleUI/CommandPanel/HBoxContainer/PlayerInfo/VBoxContainer" unique_id=213986223]
+layout_mode = 2
+text = "HP: 100/100"
+
+[node name="MP" type="Label" parent="CanvasLayer/BattleUI/CommandPanel/HBoxContainer/PlayerInfo/VBoxContainer" unique_id=2065721143]
+layout_mode = 2
+text = "MP: 100/100"
+
+[node name="CommandGroup" type="VBoxContainer" parent="CanvasLayer/BattleUI/CommandPanel/HBoxContainer" unique_id=1479790766]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.15
+
+[node name="Normal" type="Button" parent="CanvasLayer/BattleUI/CommandPanel/HBoxContainer/CommandGroup" unique_id=360030389]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+text = "Normal"
+script = ExtResource("2_76mee")
+
+[node name="Skill" type="Button" parent="CanvasLayer/BattleUI/CommandPanel/HBoxContainer/CommandGroup" unique_id=24896566]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+text = "Skill"
+
+[node name="Monster" type="Button" parent="CanvasLayer/BattleUI/CommandPanel/HBoxContainer/CommandGroup" unique_id=1287051072]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+text = "Monster"
+
+[node name="Item" type="Button" parent="CanvasLayer/BattleUI/CommandPanel/HBoxContainer/CommandGroup" unique_id=102392796]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+text = "Item"
+
+[node name="End Turn" type="Button" parent="CanvasLayer/BattleUI/CommandPanel/HBoxContainer/CommandGroup" unique_id=700452397]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+text = "End Turn"
+
+[node name="CommandList" type="HFlowContainer" parent="CanvasLayer/BattleUI/CommandPanel/HBoxContainer" unique_id=2115181011]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.45
+
+[node name="MapOverview" type="Panel" parent="CanvasLayer/BattleUI/CommandPanel/HBoxContainer" unique_id=710768406]
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2

@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/Avatar_Database_Management.dir/link.d CMakeFiles/Avatar_Database_Management.dir/main.cpp.o -o Avatar_Database_Management
