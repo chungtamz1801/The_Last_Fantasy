@@ -1,9 +1,6 @@
 extends Node
 
-
-
-class_name BattleFieldManager
-var players: Array[Player]
+var teams: Array[Team]
 static var turn_manager := TurnManager.new()
 
 func _ready() -> void:

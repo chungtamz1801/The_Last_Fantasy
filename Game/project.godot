@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 SaveSystem="*uid://cb7cwl8d0vnw0"
 BattleManager="*uid://bx143vqgip0cv"
+GameManager="*uid://cttm6jyji02sb"
 
 [display]
 

@@ -95,16 +95,3 @@ func clear_avatar_UI():
 	avatar_left_stat_label.text = ""
 	avatar_right_stat_label.text = ""
 	
-	
-#func load_avatars():
-	#var file = FileAccess.open("res://data/Avatars.json", FileAccess.READ)
-	#var json = JSON.new()
-	#var error = json.parse(file.get_as_text())
-	#if error == OK:
-		#for data in json.data:
-			#var avatar = Base_Avatar.new()
-			#avatar.Name = data["Name"]
-			#
-			#avatar_db.append(avatar)
-	#for avatar in avatar_db:
-		#print(avatar.Name)

@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cvh8nhn1gou6o" path="res://scripts/layout/avatar_selection.gd" id="1_6jpec"]
 [ext_resource type="Script" uid="uid://cig3q0vm4140i" path="res://scripts/layout/avatar_list.gd" id="1_e1wbe"]
 [ext_resource type="Script" uid="uid://c7ga5om4grpak" path="res://scripts/layout/player_selection_button.gd" id="2_38fc7"]
+[ext_resource type="Script" uid="uid://bmgdoelmgql1s" path="res://scripts/layout/start_button.gd" id="4_4wypj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_13qtx"]
 bg_color = Color(0, 0, 0, 1)
@@ -174,7 +175,8 @@ size_flags_horizontal = 8
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.1
 
-[node name="Button" type="Button" parent="PanelContainer/VBoxContainer/MarginContainer" unique_id=723214536]
+[node name="StartButton" type="Button" parent="PanelContainer/VBoxContainer/MarginContainer" unique_id=723214536]
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 text = "Start"
+script = ExtResource("4_4wypj")
